@@ -1,0 +1,125 @@
+.photo {
+  position: absolute;
+  top: 65%;
+  right: 35%;
+  transform: translate(0, -50%);
+  display: block;
+}
+
+.photo img {
+  
+  width: 450px;
+  height: 580px;
+  object-fit: cover;
+  border-radius: 30px;
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* .photo:hover img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.photo .glow-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+/* 
+.photo .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+   */
+  /* .photo:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+} */
+
+.photo:hover img,
+.photo:hover .glow-wrap {
+  filter: grayscale(0%) contrast(100%);
+}
+
+h1 {
+
+  z-index: 1;
+  font-size: 100px;
+  color: #FFA500;
+  transform: translate(-25%, -65%);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 0 6px #111827, 2px 2px 6px #000000;
+}
+
+#author {
+  font-family: Helvetica, Arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #888;
+}
+
+#author:hover {
+  color: #111;
+}
+
+.text-container {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.slide-down-text {
+  position: absolute;
+  top: -100px;
+  opacity: 0;
+  animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.image-container {
+  margin-top: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-up-image {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

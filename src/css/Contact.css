@@ -1,0 +1,95 @@
+
+/* --------------------------------------------------------------------- */
+/* General Styling */
+/* General Styling */
+
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #2d2d2d; /* Dark container background */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Left Section */
+  .contact-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .contact-left h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-left: 90px;
+    margin-top: -5%;
+  }
+  
+  .contact-left .highlight {
+    display: inline-block;
+  }
+  
+  .contact-info {
+    align-items: right;
+    font-size: 15px;
+    color: #888; /* Dimmed gray text */
+  }
+  
+  /* Right Section */
+  .contact-right {
+    flex: 1;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between inputs */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    outline: none;
+  }
+  
+  .message-input {
+    height: 100px; /* Larger textarea */
+  }
+  
+  .form-input::placeholder {
+    color: #666; /* Placeholder color */
+    text-transform: uppercase;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 20px;
+  }
+  
+  .cancel-btn,
+  .send-btn {
+    background: none;
+    border: none;
+    color: #FFA500; /* Pink for buttons */
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .cancel-btn:hover,
+  .send-btn:hover {
+    text-decoration: underline;
+  }
+  
